@@ -1,0 +1,43 @@
+{
+    "name": "ramonpego/cli",
+    "description": "A lightweight package to execute commands on your local machine.",
+    "keywords": [
+        "ramonpego","command",
+        "cli","terminal"
+    ],
+    "homepage": "https://github.com/ramonpego/cli",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ramon Pego",
+            "email": "ramon.pego.stl@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0|^7.4",
+        "symfony/process": "^4.3 || ^5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.4",
+        "spatie/phpunit-snapshot-assertions": "^4.0",
+        "symfony/var-dumper": "^5.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "RamonPego\\CLI\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RamonPego\\CLI\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    }
+}
